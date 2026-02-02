@@ -1,45 +1,71 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
 }
 
+/* Heading */
 h3 {
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+/* Button */
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 600;
     border: none;
-    border-radius: 6px;
-    background-color: #4f46e5;
-    color: white;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 button:hover {
-    background-color: #4338ca;
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
 }
 
+button:active {
+    transform: scale(0.96);
+}
+
+/* Color Display Box */
 div {
-    height: 120px;
+    height: 150px;
     width: 90%;
-    max-width: 400px; ✅
-    margin-top: 25px;
-    border-radius: 10px;
+    max-width: 420px;
+    margin-top: 35px;
+    border-radius: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
-    color: white;
-    background-color: #999;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    background: #999;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    transition: all 0.4s ease;
+}
+
+/* Optional hover effect on color box */
+div:hover {
+    transform: scale(1.03);
 }
